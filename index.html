@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artrixx</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="p-0">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg gallery-nav bg-light shadow-sm py-1">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo-removebg-preview.png"
+            alt="Logo"
+            class="logo-img"
+          />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav navLinks gap-2">
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Artworks
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="2d-arts.html">2d Art</a></li>
+                <li><a class="dropdown-item " href="3d-arts.html">3D Art</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Ignite Your Imagination with Exceptional Digital Art</h1>
+      <p>
+        Welcome to Artrixx where artistic vision meets cuttingedge technology.
+        We create stunning digital artwork tailored to your unique goals.
+        Whether you're a brand, publisher, or creative professional, our visuals
+        are designed to captivate, connect, and leave a lasting impression.
+      </p>
+      <button class="cta" onclick="window.location.href='#portfolio'">
+        My Artworks
+      </button>
+    </section>
+
+    <section class="container" style="margin-top: -4rem">
+      <div class="section-box">
+        <div>
+          <img
+            src="images/top-branding.png"
+            alt="Clutch"
+            style="height: 70px; margin-bottom: 0.5rem"
+          />
+          <p><strong>100+ Reviews</strong><br />Top Branding</p>
+        </div>
+        <div>
+          <img
+            src="images/good-firms.png"
+            alt="GoodFirms"
+            style="height: 70px; margin-bottom: 0.5rem"
+          />
+          <p><strong>30+ Reviews</strong><br />GoodFirms Certified</p>
+        </div>
+        <div>
+          <img
+            src="images/reliable-comapny.png"
+            alt="Reliable"
+            style="height: 70px; margin-bottom: 0.5rem"
+          />
+          <p><strong>50+ Reviews</strong><br />Reliable Company</p>
+        </div>
+        <div>
+          <img
+            src="images/top-artist.png"
+            alt="Top artist"
+            style="height: 70px; margin-bottom: 0.5rem"
+          />
+          <p><strong>20+ Reviews</strong><br />Top Artist</p>
+        </div>
+        <p
+          style="
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-light);
+          "
+        >
+          A 3-year journey is not too long, but we are proud that our dedication
+          and efforts have been recognized along the way.
+        </p>
+      </div>
+    </section>
+
+    <section><div class="px-3"> <h2 class="section-title">Portfolio</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+        <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+    
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Card 1 -->
+          <div class="carousel-card">
+            <div class="card">
+              <a href="2d-arts.html">
+                <img src="images/wmremove-transformed (2).jpeg" class="card-img-top" alt="Sea" />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2D </h5>
+                <!-- <p class="card-text"></p> -->
+                <a href="2d-arts.html" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+          </div>
+
+           <!-- Card 2 -->
+          <div class="carousel-card">
+            <div class="card">
+              <a href="3d-arts.html">
+                <img src="images/Artist.jpg" class="card-img-top" alt="Sea" />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">3D</h5>
+                <!-- <p class="card-text"></p> -->
+                <a href="3d-arts.html" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+          </div>
+           <!-- Card 3 -->
+           <div class="carousel-card">
+            <div class="card">
+              <a href="your-page.html">
+                <img src="images/wmremove-transformed (2).jpeg" class="card-img-top" alt="Sea" />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">OCs</h5>
+                <!-- <p class="card-text"></p> -->
+                <a href="you" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+          </div>
+           <!-- Card 4 -->
+          <div class="carousel-card">
+            <div class="card">
+              <a href="your-page.html">
+                <img src="images/wmremove-transformed (2).jpeg" class="card-img-top" alt="Sea" />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sea</h5>
+                <!-- <p class="card-text"></p> -->
+                <a href="your-page.html" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 5 -->
+          <div class="carousel-card">
+            <div class="card">
+              <img src="images/wmremove-transformed (2).jpeg" class="card-img-top" alt="Lake" />
+              <div class="card-body">
+                <h5 class="card-title">Lake</h5>
+                <!-- <p class="card-text"></p> -->
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 6 -->
+          <div class="carousel-card">
+            <div class="card">
+              <img src="images/wmremove-transformed (2).jpeg" class="card-img-top" alt="River" />
+              <div class="card-body">
+                <h5 class="card-title">River</h5>
+                <!-- <p class="card-text"></p> -->
+                <a href="#" class="btn btn-primary">View More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <main class="container">
+         <section id="services">
+        <h2 class="section-title">Services & Pricing</h2>
+        <div class="services">
+          <div class="service-card">
+            <h3>Illustration</h3>
+            <p>Book covers, editorials, and personal commissions.</p>
+            <p><strong>Starting at:</strong> $250</p>
+          </div>
+
+          <div class="service-card">
+            <h3>Concept Art</h3>
+            <p>Game and animation ready visual ideas.</p>
+            <p><strong>Starting at:</strong> $300</p>
+          </div>
+
+          <div class="service-card">
+            <h3>Character Design</h3>
+            <p>Stylized or realistic characters tailored for your vision.</p>
+            <p><strong>Starting at:</strong> $200</p>
+          </div>
+
+          <div class="service-card">
+            <h3>Logo & Branding</h3>
+            <p>
+              Custom logos and visual identity kits for authors, streamers, and
+              businesses.
+            </p>
+            <p><strong>Starting at:</strong> $150</p>
+          </div>
+
+          <div class="service-card">
+            <h3>Social Media Kits</h3>
+            <p>
+              Stylized banners, icons, and templates for cohesive digital
+              branding.
+            </p>
+            <p><strong>Starting at:</strong> $100</p>
+          </div>
+
+          <div class="service-card">
+            <h3>Custom OC & Fursona Art</h3>
+            <p>
+              Detailed designs and full body renders of your original characters
+              or fursonas.
+            </p>
+            <p><strong>Starting at:</strong> $180</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-box">
+        <h2 class="section-title">How We Bring Ideas to Life</h2>
+        <p style="margin-bottom: 0.5rem; width: 70%">
+          Whether you're aiming to strengthen your brand or visualize a world of
+          your own, we’ve got you covered with bold visuals and pro-level
+          artistry.
+        </p>
+
+        <div class="services" style="margin-top: 2rem">
+          <div>
+            <h3 style="color: var(--primary); margin-bottom: 0.5rem">
+              🎨 What We Do Best
+            </h3>
+            <ul style="line-height: 1.8; padding-left: 1rem">
+              <li>
+                <strong>Illustration:</strong> From cover art to editorials we
+                create visuals that breathe life into your stories.
+              </li>
+              <li>
+                <strong>Concept Art:</strong> High impact designs tailored for
+                games, animations, and more.
+              </li>
+              <li>
+                <strong>Character Design:</strong> Stylized or realistic our
+                characters connect with your audience.
+              </li>
+              <li>
+                <strong>Brand Visuals:</strong> Eye-catching graphics for your
+                socials, sites, and media.
+              </li>
+              <li>
+                <strong>Custom Projects:</strong> Got something wild in mind?
+                Let’s build it together.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="color: var(--primary); margin-bottom: 0.5rem">
+              🛠️ Our Creative Process
+            </h3>
+            <ol style="line-height: 1.8; padding-left: 1rem">
+              <li>
+                <strong>Consultation:</strong> Share your vision we listen and
+                align.
+              </li>
+              <li>
+                <strong>Design Phase:</strong> We sketch out initial concepts
+                tailored to your style.
+              </li>
+              <li>
+                <strong>Refinement:</strong> You give feedback we tweak and
+                polish.
+              </li>
+              <li>
+                <strong>Delivery:</strong> You get the final art, ready to
+                shine.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="section-box"
+        style="display: flex; flex-wrap: wrap; gap: 3rem; align-items: center"
+      >
+        <div style="flex: 1 1 400px">
+          <h2 class="section-title">About the Artist</h2>
+          <p style="margin-bottom: 1rem">
+            <strong>Hi, I’m Artrixx</strong>, a digital artist obsessed with
+            bold worlds, striking characters, and unforgettable storytelling.
+          </p>
+          <p style="margin-bottom: 1rem">
+            Bringing Characters to Life with Color, Imagination & Digital
+            Precision With over <strong> 3 years of experience </strong> and
+            <strong> 380+ projects </strong>
+            completed, I specialize in crafting one of a kind digital characters
+            from original custom designs and fursonas to detailed Warhammer
+            character art. My work blends creativity, color, and technology to
+            deliver bold, expressive pieces for clients around the world.
+          </p>
+          <ul style="line-height: 1.8; padding-left: 1rem; margin-bottom: 1rem">
+            <li>💡 Concept Art, Character Design, Book Illustration</li>
+            <li>🎮 Collaborations with indie game studios & authors</li>
+            <li>🛠️ Tools: Adobe Illustrator, Blender.</li>
+            <li>🌍 Global client base (10+ countries)</li>
+            <li>📚 Featured in 3 published book series</li>
+          </ul>
+          <blockquote
+            style="
+              border-left: 4px solid var(--accent);
+              padding-left: 1rem;
+              color: #b0dcd8;
+              font-style: italic;
+            "
+          >
+            “I believe art should tell a story and spark emotion. My mission?
+            Turn your ideas into visuals that captivate.”
+          </blockquote>
+        </div>
+        <div style="flex: 1 1 400px">
+          <img
+            src="images/Artist-removebg-preview.png"
+            alt="Digital Artist at work"
+            style="
+              width: 100%;
+              border-radius: 12px;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            "
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <!-- <div> -->
+          <h4>Artrixx60</h4>
+          <p><i class="fas fa-envelope"></i> artrixx60@gmail.com</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 1942 Broadway Street 314c
+            Boulder, Colorado, US 🌍
+          </p>
+          <!-- </div> -->
+        </div>
+
+        <div class="footer-right">
+          <h4>Connect with Me</h4>
+          <div class="social-icons">
+            <a href="https://instagram.com/artrixx60" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://yourwebsite.com/" target="_blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 Artrixx. All rights reserved.</p>
+    </footer>
+    <div id="lightbox" onclick="this.style.display='none'">
+      <img id="lightbox-img" src="" alt="Full Image View" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
